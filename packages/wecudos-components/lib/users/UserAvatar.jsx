@@ -13,14 +13,14 @@ const UserAvatar = ({user, size, link}) => {
     display: "inline-block",
     height: sizes[size],
     width: sizes[size]
-  }; 
+  };
 
   const imgStyle = {
     borderRadius: "100%",
-    display: "block",
+    display: "inline-block",
     height: sizes[size],
     width: sizes[size]
-  }; 
+  };
 
   const img = <img alt={Users.getDisplayName(user)} style={imgStyle} className="avatar" src={Avatar.getUrl(user)}/>;
 

@@ -52,7 +52,8 @@ class UserMenu extends Component {
         <Dropdown id="user-dropdown" className="user-menu-dropdown">
           <Dropdown.Toggle>
             <UserAvatar size="small" user={user} link={false} />
-            <div>{Users.getDisplayName(user)}</div>
+            &nbsp;
+            <span>{Users.getDisplayName(user)}</span>
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <MenuItem className="dropdown-item" eventKey="1" href={Router.path("users.single", {slug: user.telescope.slug})}>Profile</MenuItem>

@@ -86,7 +86,9 @@
 .nav-user {
   .user-menu-dropdown.dropdown.btn-group {
     &, &.open {
-      @extend .btn-white
+      .btn {
+        @extend .btn-white
+      }
     }
   }
 }
@@ -106,7 +108,7 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.16em;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 10px;
   cursor: pointer;
   transition: border 0.2s ease;
